@@ -4,8 +4,10 @@ import fs from 'node:fs'
 import getTasks from './utils/getTasks.js';
 import saveTasks from './utils/saveTaks.js';
 import pc from 'picocolors'
+import { fileURLToPath } from 'node:url';
+import { dirname,join } from 'node:path';
 
-
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 
 
@@ -69,7 +71,8 @@ if(command == 'complete'){
 }
 
 if(command == 'help'){
-    const commands = JSON.parse(fs.readFileSync('./commands.json'))
+    const commandPath = join(__dirname,'commands.json')
+    const commands = JSON.parse(fs.readFileSync(commandPath))
     commands.forEach(command => {
         console.log(`${pc.green(command.command)} | ${pc.yellow(command.description)} | ${pc.yellow(command.usage)}`)
     });
