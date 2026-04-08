@@ -1,0 +1,32 @@
+[
+    {
+        "command":"add",
+        "description":"add a task with default status pending",
+        "usage":"task-mgr add <task text>"
+    },
+    {
+        "command":"list",
+        "description":"list all tasks",
+        "usage":"task-mgr list"
+    },
+    {
+        "command":"delete",
+        "description":"delete a task",
+        "usage":"task-mgr delete <task id>"
+    },
+    {
+        "command":"complete",
+        "description":"complete a task",
+        "usage":"task-mgr complete <task id>"
+    },
+    {
+        "command":"help",
+        "description":"show help",
+        "usage":"task-mgr help"
+    },
+    {
+        "command":"clear-all",
+        "description":"clear all tasks",
+        "usage":"task-mgr clear-all"
+    }
+]
