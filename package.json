@@ -1,5 +1,5 @@
 {
-  "name": "cli_taskmanager",
+  "name": "task-mgr",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
